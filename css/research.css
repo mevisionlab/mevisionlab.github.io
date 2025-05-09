@@ -1,0 +1,116 @@
+.research-content {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 2rem 4rem;
+}
+
+.research-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.research-intro h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.research-intro p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.research-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.research-area {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-area:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.area-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.area-icon i {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.research-area h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.research-area ul {
+    list-style: none;
+    padding: 0;
+}
+
+.research-area li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.research-area li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .research-intro h1 {
+        font-size: 2rem;
+    }
+    
+    .research-intro p {
+        font-size: 1rem;
+    }
+    
+    .research-area {
+        padding: 1.5rem;
+    }
+    
+    .area-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .area-icon i {
+        font-size: 20px;
+    }
+    
+    .research-area h2 {
+        font-size: 1.3rem;
+    }
+} 

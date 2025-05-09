@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学术成果 | MEVision Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/publications.css">
+    <link rel="stylesheet" href="fonts/SmileySans-Oblique.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <div class="logo-icon">M</div>
+                    <span>MEVision Lab</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="research.html" data-lang-zh="研究方向" data-lang-en="Research">研究方向</a>
+                <a href="team.html" data-lang-zh="团队成员" data-lang-en="Team">团队成员</a>
+                <a href="publications.html" class="active" data-lang-zh="学术成果" data-lang-en="Publications">学术成果</a>
+                <a href="news.html" data-lang-zh="新闻动态" data-lang-en="News">新闻动态</a>
+                <a href="contact.html" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </div>
+            <div class="lang-switch">
+                <button onclick="switchLanguage('zh')" class="active">中</button>
+                <button onclick="switchLanguage('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 学术成果内容 -->
+    <main class="publications-content">
+        <section class="publications-intro">
+            <h1 data-lang-zh="学术成果" data-lang-en="Publications">学术成果</h1>
+            <p data-lang-zh="我们的研究成果发表在顶级期刊和会议上" 
+               data-lang-en="Our research results are published in top journals and conferences">
+               我们的研究成果发表在顶级期刊和会议上
+            </p>
+        </section>
+
+        <section class="publications-filter">
+            <div class="filter-buttons">
+                <button class="active" data-filter="all" data-lang-zh="全部" data-lang-en="All">全部</button>
+                <button data-filter="2024" data-lang-zh="2024" data-lang-en="2024">2024</button>
+                <button data-filter="2023" data-lang-zh="2023" data-lang-en="2023">2023</button>
+                <button data-filter="2022" data-lang-zh="2022" data-lang-en="2022">2022</button>
+            </div>
+        </section>
+
+        <section class="publications-list">
+            <!-- 2024年论文 -->
+            <div class="publication-year">
+                <h2>2024</h2>
+                <div class="publication-items">
+                    <div class="publication-item fade-in" data-year="2024">
+                        <div class="pub-content">
+                            <h3>Medical Image Analysis with Deep Learning</h3>
+                            <p class="authors">Guangyu Ren, Hengyan Liu, et al.</p>
+                            <p class="journal">IEEE Transactions on Medical Imaging</p>
+                            <p class="abstract">A novel approach to medical image analysis using deep learning techniques...</p>
+                            <div class="links">
+                                <a href="#" target="_blank" class="button">
+                                    <i class="fas fa-file-pdf"></i> PDF
+                                </a>
+                                <a href="#" target="_blank" class="button">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="#" target="_blank" class="button">
+                                    <i class="fas fa-link"></i> DOI
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2023年论文 -->
+            <div class="publication-year">
+                <h2>2023</h2>
+                <div class="publication-items">
+                    <div class="publication-item fade-in" data-year="2023">
+                        <div class="pub-content">
+                            <h3>Advanced Computer Vision Techniques</h3>
+                            <p class="authors">Hengyan Liu, Guangyu Ren, et al.</p>
+                            <p class="journal">CVPR 2023</p>
+                            <p class="abstract">A comprehensive study on advanced computer vision techniques...</p>
+                            <div class="links">
+                                <a href="#" target="_blank" class="button">
+                                    <i class="fas fa-file-pdf"></i> PDF
+                                </a>
+                                <a href="#" target="_blank" class="button">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="#" target="_blank" class="button">
+                                    <i class="fas fa-link"></i> DOI
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部信息 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-lang-zh="联系方式" data-lang-en="Contact">联系方式</h3>
+                <p>西交利物浦大学 智能科学与工程系</p>
+                <p>江苏省苏州市工业园区独墅湖科教创新区仁爱路111号</p>
+                <p>Email: guangyu.ren@xjtlu.edu.cn</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-zh="快速链接" data-lang-en="Quick Links">快速链接</h3>
+                <a href="https://www.xjtlu.edu.cn" target="_blank">西交利物浦大学</a>
+                <a href="https://www.xjtlu.edu.cn/zh/study/departments/department-intelligent-science-and-engineering" target="_blank">智能科学与工程系</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-zh="关注我们" data-lang-en="Follow Us">关注我们</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-weibo"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MEVision Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/publications.js"></script>
+</body>
+</html> 

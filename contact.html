@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 | MEVision Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="fonts/SmileySans-Oblique.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <div class="logo-icon">M</div>
+                    <span>MEVision Lab</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="research.html" data-lang-zh="研究方向" data-lang-en="Research">研究方向</a>
+                <a href="team.html" data-lang-zh="团队成员" data-lang-en="Team">团队成员</a>
+                <a href="publications.html" data-lang-zh="学术成果" data-lang-en="Publications">学术成果</a>
+                <a href="news.html" data-lang-zh="新闻动态" data-lang-en="News">新闻动态</a>
+                <a href="contact.html" class="active" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </div>
+            <div class="lang-switch">
+                <button onclick="switchLanguage('zh')" class="active">中</button>
+                <button onclick="switchLanguage('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 联系我们内容 -->
+    <main class="contact-content">
+        <section class="contact-intro">
+            <h1 data-lang-zh="联系我们" data-lang-en="Contact Us">联系我们</h1>
+            <p data-lang-zh="欢迎与我们联系，探讨合作机会" 
+               data-lang-en="Welcome to contact us for collaboration opportunities">
+               欢迎与我们联系，探讨合作机会
+            </p>
+        </section>
+
+        <section class="contact-grid">
+            <div class="contact-info">
+                <div class="info-card fade-in">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 data-lang-zh="地址" data-lang-en="Address">地址</h3>
+                    <p>西交利物浦大学 智能科学与工程系</p>
+                    <p>江苏省苏州市工业园区独墅湖科教创新区仁爱路111号</p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <i class="fas fa-envelope"></i>
+                    <h3 data-lang-zh="邮箱" data-lang-en="Email">邮箱</h3>
+                    <p>guangyu.ren@xjtlu.edu.cn</p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <i class="fas fa-phone"></i>
+                    <h3 data-lang-zh="电话" data-lang-en="Phone">电话</h3>
+                    <p>+86 (0)512 8816 1000</p>
+                </div>
+            </div>
+
+            <div class="contact-form fade-in">
+                <h2 data-lang-zh="合作咨询" data-lang-en="Collaboration Inquiry">合作咨询</h2>
+                <form id="contactForm" onsubmit="return submitForm(event)">
+                    <div class="form-group">
+                        <label for="name" data-lang-zh="姓名" data-lang-en="Name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-lang-zh="邮箱" data-lang-en="Email">邮箱</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organization" data-lang-zh="单位/机构" data-lang-en="Organization">单位/机构</label>
+                        <input type="text" id="organization" name="organization" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="purpose" data-lang-zh="合作目的" data-lang-en="Purpose">合作目的</label>
+                        <select id="purpose" name="purpose" required>
+                            <option value="" disabled selected data-lang-zh="请选择" data-lang-en="Please select">请选择</option>
+                            <option value="industry" data-lang-zh="产业合作" data-lang-en="Industry Collaboration">产业合作</option>
+                            <option value="research" data-lang-zh="研究合作" data-lang-en="Research Collaboration">研究合作</option>
+                            <option value="opportunity" data-lang-zh="寻求工作/学习机会" data-lang-en="Seeking Job/Study Opportunity">寻求工作/学习机会</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-lang-zh="留言" data-lang-en="Message">留言</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button" data-lang-zh="提交" data-lang-en="Submit">提交</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section fade-in">
+            <h2 data-lang-zh="位置" data-lang-en="Location">位置</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3390.0307837496947!2d120.7436393!3d31.2733589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b3a659438b0b0f%3A0x5c1476b47b8fe54e!2sXi&#39;an%20Jiaotong-Liverpool%20University!5e0!3m2!1sen!2scn!4v1616000000000!5m2!1sen!2scn" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部信息 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-lang-zh="联系方式" data-lang-en="Contact">联系方式</h3>
+                <p>西交利物浦大学 智能科学与工程系</p>
+                <p>江苏省苏州市工业园区独墅湖科教创新区仁爱路111号</p>
+                <p>Email: guangyu.ren@xjtlu.edu.cn</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-zh="快速链接" data-lang-en="Quick Links">快速链接</h3>
+                <a href="https://www.xjtlu.edu.cn" target="_blank">西交利物浦大学</a>
+                <a href="https://www.xjtlu.edu.cn/zh/study/departments/department-intelligent-science-and-engineering" target="_blank">智能科学与工程系</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-zh="关注我们" data-lang-en="Follow Us">关注我们</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-weibo"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MEVision Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+ 

@@ -1,0 +1,132 @@
+.team-content {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 2rem 4rem;
+}
+
+.team-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.team-intro h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.team-intro p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faculty, .students, .alumni {
+    margin-bottom: 4rem;
+}
+
+.faculty h2, .students h2, .alumni h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.member-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.member-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.member-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 1rem;
+}
+
+.member-card .title {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin: 0.5rem 1rem;
+}
+
+.member-card .affiliation {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 0.5rem 1rem;
+}
+
+.member-card .research-interests {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin: 1rem;
+    line-height: 1.4;
+}
+
+.member-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.member-links a {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.member-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .team-intro h1 {
+        font-size: 2rem;
+    }
+    
+    .team-intro p {
+        font-size: 1rem;
+    }
+    
+    .faculty h2, .students h2, .alumni h2 {
+        font-size: 1.5rem;
+    }
+    
+    .member-card img {
+        height: 250px;
+    }
+    
+    .member-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .member-card .title {
+        font-size: 1rem;
+    }
+} 

@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- 引入得意黑字体 -->
     <link rel="stylesheet" href="fonts/SmileySans-Oblique.ttf">
     <!-- Font Awesome图标库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 <body>
     <!-- 顶部导航栏 -->
@@ -22,8 +24,186 @@
                     <span>MEVision Lab</span>
                 </a>
             </div>
-            <!-- ... 其余代码保持不变 ... -->
+            <div class="nav-links">
+                <a href="index.html" class="active" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="research.html" data-lang-zh="研究方向" data-lang-en="Research">研究方向</a>
+                <a href="team.html" data-lang-zh="团队成员" data-lang-en="Team">团队成员</a>
+                <a href="publications.html" data-lang-zh="学术成果" data-lang-en="Publications">学术成果</a>
+                <a href="news.html" data-lang-zh="新闻动态" data-lang-en="News">新闻动态</a>
+                <a href="contact.html" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </div>
+            <div class="lang-switch">
+                <button onclick="switchLanguage('zh')" class="active">中</button>
+                <button onclick="switchLanguage('en')">EN</button>
+            </div>
         </nav>
     </header>
+
+    <!-- 主页内容 -->
+    <main>
+        <!-- 轮播图部分 -->
+        <section class="hero-section">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h1 data-lang-zh="医学视觉实验室" data-lang-en="Medical Vision Laboratory">
+                                医学视觉实验室
+                            </h1>
+                            <p data-lang-zh="致力于医学影像分析和计算机视觉的前沿研究" 
+                               data-lang-en="Dedicated to cutting-edge research in medical image analysis and computer vision">
+                               致力于医学影像分析和计算机视觉的前沿研究
+                            </p>
+                            <a href="research.html" class="cta-button" data-lang-zh="了解更多" data-lang-en="Learn More">
+                                了解更多
+                            </a>
+                        </div>
+                        <div class="slide-image" style="background-image: url('images/hero1.jpg');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h1 data-lang-zh="创新技术" data-lang-en="Innovative Technology">
+                                创新技术
+                            </h1>
+                            <p data-lang-zh="运用深度学习技术推动医学影像分析的发展" 
+                               data-lang-en="Advancing medical image analysis through deep learning technology">
+                               运用深度学习技术推动医学影像分析的发展
+                            </p>
+                            <a href="publications.html" class="cta-button" data-lang-zh="查看成果" data-lang-en="View Publications">
+                                查看成果
+                            </a>
+                        </div>
+                        <div class="slide-image" style="background-image: url('images/hero2.jpg');"></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- 研究方向概览 -->
+        <section class="research-overview">
+            <h2 data-lang-zh="研究方向" data-lang-en="Research Areas">研究方向</h2>
+            <div class="research-grid">
+                <div class="research-card fade-in">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3 data-lang-zh="医学影像分析" data-lang-en="Medical Image Analysis">医学影像分析</h3>
+                    <p data-lang-zh="开发先进的医学图像处理算法，提高诊断准确性" 
+                       data-lang-en="Developing advanced medical image processing algorithms to improve diagnostic accuracy">
+                       开发先进的医学图像处理算法，提高诊断准确性
+                    </p>
+                </div>
+                <div class="research-card fade-in">
+                    <div class="card-icon"><i class="fas fa-eye"></i></div>
+                    <h3 data-lang-zh="计算机视觉" data-lang-en="Computer Vision">计算机视觉</h3>
+                    <p data-lang-zh="研究视觉感知和场景理解的前沿技术" 
+                       data-lang-en="Researching cutting-edge technologies in visual perception and scene understanding">
+                       研究视觉感知和场景理解的前沿技术
+                    </p>
+                </div>
+                <div class="research-card fade-in">
+                    <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                    <h3 data-lang-zh="深度学习" data-lang-en="Deep Learning">深度学习</h3>
+                    <p data-lang-zh="探索深度学习在医学影像领域的创新应用" 
+                       data-lang-en="Exploring innovative applications of deep learning in medical imaging">
+                       探索深度学习在医学影像领域的创新应用
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新动态 -->
+        <section class="latest-news">
+            <h2 data-lang-zh="最新动态" data-lang-en="Latest News">最新动态</h2>
+            <div class="news-grid">
+                <div class="news-card fade-in">
+                    <div class="news-image">
+                        <img src="images/news1.jpg" alt="实验室新闻">
+                        <div class="news-date">
+                            <span class="day">15</span>
+                            <span class="month">Mar</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3 data-lang-zh="实验室成功获得国家自然科学基金项目资助" 
+                            data-lang-en="Lab Receives NSFC Grant">
+                            实验室成功获得国家自然科学基金项目资助
+                        </h3>
+                        <p data-lang-zh="我们的研究团队最近获得了国家自然科学基金项目的资助..." 
+                           data-lang-en="Our research team has recently received funding from NSFC...">
+                           我们的研究团队最近获得了国家自然科学基金项目的资助...
+                        </p>
+                        <a href="news.html" class="read-more" data-lang-zh="阅读更多" data-lang-en="Read More">阅读更多</a>
+                    </div>
+                </div>
+                <div class="news-card fade-in">
+                    <div class="news-image">
+                        <img src="images/news2.jpg" alt="学术会议">
+                        <div class="news-date">
+                            <span class="day">10</span>
+                            <span class="month">Mar</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3 data-lang-zh="实验室成员在CVPR 2024发表论文" 
+                            data-lang-en="Lab Members Published Paper in CVPR 2024">
+                            实验室成员在CVPR 2024发表论文
+                        </h3>
+                        <p data-lang-zh="我们的研究成果被计算机视觉顶级会议CVPR 2024接收..." 
+                           data-lang-en="Our research work has been accepted by CVPR 2024...">
+                           我们的研究成果被计算机视觉顶级会议CVPR 2024接收...
+                        </p>
+                        <a href="news.html" class="read-more" data-lang-zh="阅读更多" data-lang-en="Read More">阅读更多</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 加入我们 -->
+        <section class="join-us">
+            <div class="join-content">
+                <h2 data-lang-zh="加入我们" data-lang-en="Join Us">加入我们</h2>
+                <p data-lang-zh="我们欢迎优秀的学生和研究人员加入我们的团队" 
+                   data-lang-en="We welcome excellent students and researchers to join our team">
+                   我们欢迎优秀的学生和研究人员加入我们的团队
+                </p>
+                <a href="contact.html" class="cta-button" data-lang-zh="联系我们" data-lang-en="Contact Us">联系我们</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部信息 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-lang-zh="联系方式" data-lang-en="Contact">联系方式</h3>
+                <p>西交利物浦大学 智能科学与工程系</p>
+                <p>江苏省苏州市工业园区独墅湖科教创新区仁爱路111号</p>
+                <p>Email: guangyu.ren@xjtlu.edu.cn</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-zh="快速链接" data-lang-en="Quick Links">快速链接</h3>
+                <a href="https://www.xjtlu.edu.cn" target="_blank">西交利物浦大学</a>
+                <a href="https://www.xjtlu.edu.cn/zh/study/departments/department-intelligent-science-and-engineering" target="_blank">智能科学与工程系</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-zh="关注我们" data-lang-en="Follow Us">关注我们</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-weibo"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MEVision Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html> 

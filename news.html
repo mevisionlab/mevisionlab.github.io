@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻动态 | MEVision Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="fonts/SmileySans-Oblique.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <div class="logo-icon">M</div>
+                    <span>MEVision Lab</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="research.html" data-lang-zh="研究方向" data-lang-en="Research">研究方向</a>
+                <a href="team.html" data-lang-zh="团队成员" data-lang-en="Team">团队成员</a>
+                <a href="publications.html" data-lang-zh="学术成果" data-lang-en="Publications">学术成果</a>
+                <a href="news.html" class="active" data-lang-zh="新闻动态" data-lang-en="News">新闻动态</a>
+                <a href="contact.html" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </div>
+            <div class="lang-switch">
+                <button onclick="switchLanguage('zh')" class="active">中</button>
+                <button onclick="switchLanguage('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 新闻动态内容 -->
+    <main class="news-content">
+        <section class="news-intro">
+            <h1 data-lang-zh="新闻动态" data-lang-en="News">新闻动态</h1>
+            <p data-lang-zh="了解我们实验室的最新动态和研究进展" 
+               data-lang-en="Stay updated with our latest news and research progress">
+               了解我们实验室的最新动态和研究进展
+            </p>
+        </section>
+
+        <section class="news-grid">
+            <!-- 新闻项目将通过JavaScript动态加载 -->
+            <article class="news-item fade-in">
+                <div class="news-image">
+                    <img src="images/news1.jpg" alt="实验室新闻">
+                    <div class="news-date">
+                        <span class="day">15</span>
+                        <span class="month">Mar</span>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+                <div class="news-content">
+                    <h2 data-lang-zh="实验室成功获得国家自然科学基金项目资助" 
+                        data-lang-en="Lab Receives NSFC Grant">
+                        实验室成功获得国家自然科学基金项目资助
+                    </h2>
+                    <p class="news-excerpt" data-lang-zh="我们的研究团队最近获得了国家自然科学基金项目的资助..." 
+                       data-lang-en="Our research team has recently received funding from the National Natural Science Foundation of China...">
+                       我们的研究团队最近获得了国家自然科学基金项目的资助...
+                    </p>
+                    <a href="#" class="read-more" data-lang-zh="阅读更多" data-lang-en="Read More">阅读更多</a>
+                </div>
+            </article>
+
+            <article class="news-item fade-in">
+                <div class="news-image">
+                    <img src="images/news2.jpg" alt="学术会议">
+                    <div class="news-date">
+                        <span class="day">10</span>
+                        <span class="month">Mar</span>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+                <div class="news-content">
+                    <h2 data-lang-zh="实验室成员在CVPR 2024发表论文" 
+                        data-lang-en="Lab Members Published Paper in CVPR 2024">
+                        实验室成员在CVPR 2024发表论文
+                    </h2>
+                    <p class="news-excerpt" data-lang-zh="我们的研究成果被计算机视觉顶级会议CVPR 2024接收..." 
+                       data-lang-en="Our research work has been accepted by CVPR 2024...">
+                       我们的研究成果被计算机视觉顶级会议CVPR 2024接收...
+                    </p>
+                    <a href="#" class="read-more" data-lang-zh="阅读更多" data-lang-en="Read More">阅读更多</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-pagination">
+            <button class="pagination-button prev" disabled>
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="page-numbers">
+                <span class="page-number active">1</span>
+                <span class="page-number">2</span>
+                <span class="page-number">3</span>
+            </div>
+            <button class="pagination-button next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </section>
+    </main>
+
+    <!-- 底部信息 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-lang-zh="联系方式" data-lang-en="Contact">联系方式</h3>
+                <p>西交利物浦大学 智能科学与工程系</p>
+                <p>江苏省苏州市工业园区独墅湖科教创新区仁爱路111号</p>
+                <p>Email: guangyu.ren@xjtlu.edu.cn</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-zh="快速链接" data-lang-en="Quick Links">快速链接</h3>
+                <a href="https://www.xjtlu.edu.cn" target="_blank">西交利物浦大学</a>
+                <a href="https://www.xjtlu.edu.cn/zh/study/departments/department-intelligent-science-and-engineering" target="_blank">智能科学与工程系</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-zh="关注我们" data-lang-en="Follow Us">关注我们</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-weibo"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MEVision Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html> 

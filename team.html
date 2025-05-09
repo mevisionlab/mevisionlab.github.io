@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队成员 | MEVision Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="fonts/SmileySans-Oblique.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <div class="logo-icon">M</div>
+                    <span>MEVision Lab</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="research.html" data-lang-zh="研究方向" data-lang-en="Research">研究方向</a>
+                <a href="team.html" class="active" data-lang-zh="团队成员" data-lang-en="Team">团队成员</a>
+                <a href="publications.html" data-lang-zh="学术成果" data-lang-en="Publications">学术成果</a>
+                <a href="news.html" data-lang-zh="新闻动态" data-lang-en="News">新闻动态</a>
+                <a href="contact.html" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </div>
+            <div class="lang-switch">
+                <button onclick="switchLanguage('zh')" class="active">中</button>
+                <button onclick="switchLanguage('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 团队成员内容 -->
+    <main class="team-content">
+        <section class="team-intro">
+            <h1 data-lang-zh="团队成员" data-lang-en="Team Members">团队成员</h1>
+            <p data-lang-zh="我们的团队由来自不同背景的优秀研究者组成，致力于推动医学影像分析和计算机视觉的发展" 
+               data-lang-en="Our team consists of excellent researchers from diverse backgrounds, dedicated to advancing medical image analysis and computer vision">
+               我们的团队由来自不同背景的优秀研究者组成，致力于推动医学影像分析和计算机视觉的发展
+            </p>
+        </section>
+
+        <section class="faculty">
+            <h2 data-lang-zh="教师" data-lang-en="Faculty">教师</h2>
+            <div class="member-grid">
+                <div class="member-card fade-in">
+                    <img src="images/guangyu-ren.jpg" alt="任广宇">
+                    <h3>任广宇 博士</h3>
+                    <p class="title" data-lang-zh="助理教授" data-lang-en="Assistant Professor">助理教授</p>
+                    <p class="affiliation">西交利物浦大学 智能科学与工程系</p>
+                    <p class="research-interests" data-lang-zh="研究方向：医学影像分析、计算机视觉、深度学习" 
+                       data-lang-en="Research: Medical Image Analysis, Computer Vision, Deep Learning">
+                       研究方向：医学影像分析、计算机视觉、深度学习
+                    </p>
+                    <div class="member-links">
+                        <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:guangyu.ren@xjtlu.edu.cn"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="member-card fade-in">
+                    <img src="images/hengyan-liu.jpg" alt="刘恒言">
+                    <h3>刘恒言 博士</h3>
+                    <p class="title" data-lang-zh="助理教授" data-lang-en="Assistant Professor">助理教授</p>
+                    <p class="affiliation">西交利物浦大学 智能科学与工程系</p>
+                    <p class="research-interests" data-lang-zh="研究方向：计算机视觉、深度学习、模式识别" 
+                       data-lang-en="Research: Computer Vision, Deep Learning, Pattern Recognition">
+                       研究方向：计算机视觉、深度学习、模式识别
+                    </p>
+                    <div class="member-links">
+                        <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:hengyan.liu@xjtlu.edu.cn"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="students">
+            <h2 data-lang-zh="研究生" data-lang-en="Graduate Students">研究生</h2>
+            <div class="member-grid">
+                <!-- 研究生信息将通过JavaScript动态加载 -->
+            </div>
+        </section>
+
+        <section class="alumni">
+            <h2 data-lang-zh="校友" data-lang-en="Alumni">校友</h2>
+            <div class="member-grid">
+                <!-- 校友信息将通过JavaScript动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部信息 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-lang-zh="联系方式" data-lang-en="Contact">联系方式</h3>
+                <p>西交利物浦大学 智能科学与工程系</p>
+                <p>江苏省苏州市工业园区独墅湖科教创新区仁爱路111号</p>
+                <p>Email: guangyu.ren@xjtlu.edu.cn</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-zh="快速链接" data-lang-en="Quick Links">快速链接</h3>
+                <a href="https://www.xjtlu.edu.cn" target="_blank">西交利物浦大学</a>
+                <a href="https://www.xjtlu.edu.cn/zh/study/departments/department-intelligent-science-and-engineering" target="_blank">智能科学与工程系</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-zh="关注我们" data-lang-en="Follow Us">关注我们</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-weibo"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MEVision Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/team.js"></script>
+</body>
+</html> 
